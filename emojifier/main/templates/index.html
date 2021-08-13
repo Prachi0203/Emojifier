@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+  <title>A Basic HTML5 Template</title>
+</head>
+
+<body>
+<h1>emjoifier</h1>
+<form method = 'POST'>
+  {% csrf_token %}
+  <textarea name = 'content' cols = '30' rows = '10'></textarea>
+  <button type = 'submit'>Predict</button>
+</form>
+<p>
+  {{content}} {{emoji}}
+</p>
+</body>
+</html>
